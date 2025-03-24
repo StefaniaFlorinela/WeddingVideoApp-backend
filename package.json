@@ -1,0 +1,25 @@
+{
+  "name": "weddingvideoapp-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Stefania Florinela",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "mongoose": "^8.12.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2",
+    "nodemon": "^3.1.9",
+    "passport": "^0.7.0",
+    "path": "^0.12.7"
+  }
+}

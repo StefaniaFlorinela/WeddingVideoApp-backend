@@ -1,0 +1,11 @@
+const { validateFile } = require('../validations/FileValidation')
+
+const validateUploadedFile = (req, res, next) => {
+  const { error } = validateFile(req.file);
+  if (error) {
+    return res.status(400).json({ message: error.details.map(detail => detail.message) });
+  }
+  next();
+};
+
+module.exports = validateUploadedFile ;
