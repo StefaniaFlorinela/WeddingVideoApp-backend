@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const passport = require('passport');
-const path = require('path');
 
 const app = express();
 app.use(cors());
@@ -19,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/uploads', express.static('uploads'));
-app.use('/photos', fileRouter)
+app.use('/files', fileRouter)
 
 
 app.use((req, res) => {
